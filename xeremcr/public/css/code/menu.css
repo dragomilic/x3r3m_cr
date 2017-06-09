@@ -1,0 +1,47 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 0px) and (max-device-width : 480px) {
+  /* Styles */
+  .navbar-nav{
+    margin-top: 0px;
+    display: none;
+  }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 770px) {
+  /* Styles */
+  .navbar-nav{
+    margin-top: 0px;
+    display: none;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1025px) {
+/* Styles */
+}
+
+/*
+.navbar{
+  background-color: #64b5f6;
+}
+
+.navbar-toggle{
+  background-color: #64b5f6;
+}
+
+.navbar-toggle:hover{
+  background-color: #42a5f5;
+}
+
+.navbar-nav li:hover{
+  background-color: #42a5f5;
+}
+
+.dropdown-menu{
+  background-color: #64b5f6;
+}
+
+.dropdown-menu li a:hover{
+  background-color: #42a5f5;
+}*/
