@@ -1,22 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
 	<title>@yield('title','Default')</title>
 	<!--  Style -->
 	<link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}" />
-	<!--<link rel="stylesheet" href="{{asset('Bootstrap_MD/css/bootstrap-material-design.min.css')}}" />-->
-	<link rel="stylesheet" href="{{asset('BootstrapToggle/css/bootstrap-toggle.min.css')}}" />
 	<!--Propio-->
-	<link rel="stylesheet" href="{{asset('css/code/menu.css')}}" />
-	<link rel="stylesheet" href="{{asset('css/code/body.css')}}" />
+	<link rel="stylesheet" href="{{asset('css/theme.css')}}" />
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
 	@yield('CSS')
 	<!--  -->
 
 </head>
-<body>
-	<header></header>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+	@include('_part.menu')
+
+	@include('_part.header')
 	<!---->
 	<section>
 		<div  class="row">
@@ -28,9 +37,11 @@
 			</div>
 
 		    <div class="col-xs-12 col-sm-10 col-md-10">
-		    		@include('_part.menu')
+		    		
 				<section class="MainContent">
 					@yield('contenido')
+
+					@include('_part.Contact')
 				</section>
 			</div>
 			  
@@ -49,11 +60,9 @@
 	
 	<!--  JavaScript -->
 	<script src="{{asset('js/jquery.min.js')}}"></script>
-	<script src="{{asset('AngularJS/angular.min.js')}}"></script>
-	<script src="{{asset('BootstrapToggle/js/bootstrap-toggle.min.js')}}"></script>
     <script src="{{asset('Bootstrap/js/bootstrap.min.js')}}"></script>
 	<!--Propio-->
-	<script src="{{asset('js/code/jq_menu.js')}}"></script>
+	<script src="{{asset('js/theme.js')}}"></script>
 	@yield('script')
 	<!--  -->
 

@@ -6,9 +6,11 @@
 @endsection
 
 @section('contenido')
-	<div ng-app="">
+	
+	@include('_part.about')
+	
+	@include('_part.portfolio')
 
-	</div>
 @endsection
 
 @section('script')
