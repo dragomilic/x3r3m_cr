@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}" />
 	<!--Propio-->
 	<link rel="stylesheet" href="{{asset('css/theme.css')}}" />
+	<link rel="stylesheet" href="{{asset('css/code/custom.css')}}" />
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
@@ -39,6 +40,7 @@
 		    <div class="col-xs-12 col-sm-10 col-md-10">
 		    		
 				<section class="MainContent">
+
 					@yield('contenido')
 
 					@include('_part.Contact')
@@ -55,14 +57,17 @@
 	</section>
 
 	<footer>
-		@include('_part.footer')
+		<!----> @include('_part.footer') 
 	</footer>
 	
 	<!--  JavaScript -->
+	<script src="{{asset('js/angular.min.js')}}"></script>
 	<script src="{{asset('js/jquery.min.js')}}"></script>
+	<script src="{{asset('js/modernizr.min.js')}}"></script>
     <script src="{{asset('Bootstrap/js/bootstrap.min.js')}}"></script>
 	<!--Propio-->
 	<script src="{{asset('js/theme.js')}}"></script>
+	<script src="{{asset('js/code/jq_card.js')}}"></script>
 	@yield('script')
 	<!--  -->
 

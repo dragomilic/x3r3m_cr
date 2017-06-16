@@ -1,0 +1,18 @@
+.thumbnail .descrip{
+	display: none;
+}
+.descrip{
+	padding: 10px;
+}
+.xline h4{
+	display: inline-block;
+	padding: 5px;
+	margin: 0px;	
+}
+.xline a{
+	padding: 5px; 
+	float: right;
+}
+.xline a:hover{
+	background-color: #eeeeee;
+}
