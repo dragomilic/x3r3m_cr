@@ -1,6 +1,6 @@
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-<div class="container">
+<div class="container" ng-app="menu" ng-controller="redirect">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
     <i class="fa fa-bars"></i>
@@ -13,7 +13,7 @@
   <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
     <ul class="nav navbar-nav">
       <li>
-      <a href="index.html">Home</a>
+      <a href="" ng-click="home()">Home</a>
       </li>
       <li>
       <a href="portfolio-item.html">Proyectos</a>

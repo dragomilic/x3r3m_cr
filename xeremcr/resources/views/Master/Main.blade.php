@@ -68,6 +68,7 @@
 	<!--Propio-->
 	<script src="{{asset('js/theme.js')}}"></script>
 	<script src="{{asset('js/code/jq_card.js')}}"></script>
+	<script src="{{asset('js/code/ang_menu.js')}}"></script>
 	@yield('script')
 	<!--  -->
 

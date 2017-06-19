@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('Site/Index');
 });
+
+Route::get('index', function () {
+    return view('Site/building');
+});
