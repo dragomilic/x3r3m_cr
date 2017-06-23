@@ -1,10 +1,17 @@
 angular.module('ControllerService', [])
 	.factory('ctrl', function($http){
-		var _service = {
+		
+		return {
+			get : function() {
+				return $http.get('noticias/articulos');
+			}
+		}
+
+		/*var _service = {
 			httpRequest : function(passParameters){
 
-				/**/
-				var _data = $http(passParameters).then(function (response) 
+				var _data = 
+				$http(passParameters).then(function (response) 
 				{
 					return response.data;
 				}
@@ -20,5 +27,5 @@ angular.module('ControllerService', [])
 			}
 		};
 
-		return _service;
+		return _service;*/
 	});

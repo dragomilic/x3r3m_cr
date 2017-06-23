@@ -9,9 +9,9 @@ angular.module('ctrlMenu', [])
 			/**/
 			try 
 			{
-				ctrl.httpRequest(parameters).success(function(data) {
+				ctrl.get().success(function(data) {
 					$scope.data = data.data;
-					$scope.totalItems = data.total;
+					//$scope.totalItems = data.total;
 				})
 				.error(function(data) {
 					console.log(data);

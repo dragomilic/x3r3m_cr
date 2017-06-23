@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\articulo;
 
 class ArticuloController extends Controller
 {
@@ -13,8 +14,10 @@ class ArticuloController extends Controller
      */
     public function index()
     {
-        dd('hola');
-        return response(null);
+        $Articulo = new articulo;
+        $Articulo = articulo::all();
+
+        return Response::json($Articulo);
     }
 
     /**

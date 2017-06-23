@@ -6,7 +6,7 @@
     <i class="fa fa-bars"></i>
     </button>
 
-    <a class="navbar-brand page-scroll" id="Logo" href="{{ route('noticias.index') }}" >XEREM</a>
+    <a class="navbar-brand page-scroll" id="Logo" href="" ng-click="btnhome()">XEREM</a>
 
   </div>
   <!-- Collect the nav links, forms, and other content for toggling -->

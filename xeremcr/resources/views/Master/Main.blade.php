@@ -68,10 +68,10 @@
 	<script src="{{asset('js/theme.js')}}"></script>
 	<script src="{{asset('js/code/jq/jq_card.js')}}"></script>
 
-	<script src="{{asset('js/code/ang/menu/parametro.js')}}"></script>
-	<script src="{{asset('js/code/ang/menu/ang_articulos.js')}}"></script>
-	<script src="{{asset('js/code/ang/menu/ang_factory.js')}}"></script>
-	<script src="{{asset('js/code/ang/menu/ang_app.js')}}"></script>
+	<script src="{{asset('js/code/ang/routing/parametro.js')}}"></script>
+	<script src="{{asset('js/code/ang/routing/ang_articulos.js')}}"></script>
+	<script src="{{asset('js/code/ang/routing/ang_factory.js')}}"></script>
+	<script src="{{asset('js/code/ang/routing/ang_app.js')}}"></script>
 	@yield('script')
 	<!--  -->
 
