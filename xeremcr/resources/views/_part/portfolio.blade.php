@@ -105,7 +105,6 @@
 	 </div>
 	 <!---->
 	 <div class="col-xs-12 col-md-4">
-
 	    <div class="thumbnail">
 			<img src="http://unsplash.it/680/380?random=1" alt="">
 			<div class="caption">
@@ -118,11 +117,9 @@
 				jsnvfdjnvdjnvjkn
 			</p>
 	    </div>
-
 	 </div>
 	 <!---->
 	 <div class="col-xs-12 col-md-4">
-
 	    <div class="thumbnail">
 			<img src="http://unsplash.it/680/380?random=1" alt="">
 			<div class="caption">
@@ -135,7 +132,6 @@
 				jsnvfdjnvdjnvjkn
 			</p>
 	    </div>
-
 	 </div>
 </div>
 

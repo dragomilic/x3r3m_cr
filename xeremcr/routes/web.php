@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::get('index', function () {
     return view('Site/building');
 });
+
+Route::group(['prefix' => 'noticias'], function(){
+
+	Route::get('articulos',[ 'uses' => 'ArticuloController@index', 'as'   => 'noticias.index'  ]);
+});

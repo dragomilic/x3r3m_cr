@@ -61,14 +61,17 @@
 	</footer>
 	
 	<!--  JavaScript -->
-	<script src="{{asset('js/angular.min.js')}}"></script>
+	<script src="{{asset('AngularJS/angular.min.js')}}"></script>
 	<script src="{{asset('js/jquery.min.js')}}"></script>
-	<script src="{{asset('js/modernizr.min.js')}}"></script>
     <script src="{{asset('Bootstrap/js/bootstrap.min.js')}}"></script>
 	<!--Propio-->
 	<script src="{{asset('js/theme.js')}}"></script>
-	<script src="{{asset('js/code/jq_card.js')}}"></script>
-	<script src="{{asset('js/code/ang_menu.js')}}"></script>
+	<script src="{{asset('js/code/jq/jq_card.js')}}"></script>
+
+	<script src="{{asset('js/code/ang/menu/parametro.js')}}"></script>
+	<script src="{{asset('js/code/ang/menu/ang_articulos.js')}}"></script>
+	<script src="{{asset('js/code/ang/menu/ang_factory.js')}}"></script>
+	<script src="{{asset('js/code/ang/menu/ang_app.js')}}"></script>
 	@yield('script')
 	<!--  -->
 
