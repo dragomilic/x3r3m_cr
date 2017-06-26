@@ -1,31 +1,25 @@
-angular.module('ControllerService', [])
-	.factory('ctrl', function($http){
-		
+angular.module('commentService', [])
+
+	.factory('Comment', function($http) {
+
 		return {
 			get : function() {
 				return $http.get('noticias/articulos');
+			},
+			show : function(id) {
+				return $http.get('api/comments/' + id);
+			},
+			save : function(commentData) {
+				return $http({
+					method: 'POST',
+					url: 'api/comments',
+					headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
+					data: $.param(commentData)
+				});
+			},
+			destroy : function(id) {
+				return $http.delete('api/comments/' + id);
 			}
 		}
 
-		/*var _service = {
-			httpRequest : function(passParameters){
-
-				var _data = 
-				$http(passParameters).then(function (response) 
-				{
-					return response.data;
-				}
-				,function()
-				{
-					$.gritter.add({
-						title: 'Application',
-						text: 'An error occured while processing your request.'
-					});
-				});
-
-				return _data;
-			}
-		};
-
-		return _service;*/
 	});

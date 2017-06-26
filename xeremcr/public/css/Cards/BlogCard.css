@@ -145,7 +145,7 @@
 @media screen and (min-width: 600px) {
   .blog-card {
     height: 200px;
-    max-width: 600px;
+    max-width: 800px;
   }
   .blog-card:hover .photo {
     -webkit-transform: rotate(5deg) scale(1.3);

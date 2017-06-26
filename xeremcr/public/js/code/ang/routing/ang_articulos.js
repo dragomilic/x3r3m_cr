@@ -1,26 +1,19 @@
-angular.module('ctrlMenu', [])
-	.controller('menu', function($scope, $http, ctrl){
+angular.module('mainCtrl', [])
 
-		$scope.data = [];
-		$scope.totalItems = 0;
+	.controller('mainController', function($scope, $http, Comment) {
+		// object to hold all the data for the new comment form
+		$scope.commentData = {};
 
-		$scope.btnhome = function(){
-			var parameters = _param('noticias/articulos', 'GET');
-			/**/
-			try 
-			{
-				ctrl.get().success(function(data) {
-					$scope.data = data.data;
-					//$scope.totalItems = data.total;
-				})
-				.error(function(data) {
-					console.log(data);
-				});
+		// function to handle submitting the form
+		$scope.btnhome = function() {
+			try{
+			Comment.get().then(function (success){
+							alert(success.data[0].Contenido);
+						},function (error){
+							alert(error.data);
+						});
+			}catch(err){
+				alert(err.data);
 			}
-			catch(err) {
-			    console.log(err);
-			}
-
 		};
-
 	});

@@ -1,1 +1,1 @@
-var commentApp = angular.module('articuloApp', ['ctrlMenu', 'ControllerService']);
+var commentApp = angular.module('commentApp', ['mainCtrl', 'commentService']);

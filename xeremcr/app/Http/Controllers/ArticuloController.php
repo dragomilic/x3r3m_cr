@@ -17,7 +17,7 @@ class ArticuloController extends Controller
         $Articulo = new articulo;
         $Articulo = articulo::all();
 
-        return Response::json($Articulo);
+        return response($Articulo);
     }
 
     /**
