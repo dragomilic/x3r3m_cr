@@ -7,6 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>@yield('title','Default')</title>
+	<link rel="shortcut icon" href="{{asset('favicon.ico')}}">
 	<!--  Style -->
 	<link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}" />
 	<!--Propio-->
@@ -14,10 +15,12 @@
 	<link rel="stylesheet" href="{{asset('css/code/custom.css')}}" />
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|VT323" rel="stylesheet"> -->
+	 
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
+	
 	@yield('CSS')
 	<!--  -->
 

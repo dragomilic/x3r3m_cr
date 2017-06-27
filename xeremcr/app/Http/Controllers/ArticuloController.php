@@ -50,6 +50,7 @@ class ArticuloController extends Controller
     public function show($id)
     {
         //
+        
     }
 
     /**
@@ -84,5 +85,6 @@ class ArticuloController extends Controller
     public function destroy($id)
     {
         //
+        return articulo::where('id',$id)->delete();
     }
 }
