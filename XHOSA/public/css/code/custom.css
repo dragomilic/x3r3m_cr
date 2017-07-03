@@ -1,0 +1,34 @@
+.thumbnail:hover
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thumbnail .descrip{
+	display: none;
+}
+.descrip{
+	padding: 10px;
+}
+.xline h4{
+	display: inline-block;
+	padding: 5px;
+	margin: 0px;	
+}
+.xline a{
+	padding: 5px; 
+	float: right;
+}
+.xline a:hover{
+	background-color: #eeeeee;
+}
+
+.xtitle {
+    width:40%; 
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000; /* whichever color you prefer */
+}
+
+.xtitle:hover {
+    color: gray;
+    border-bottom: 2px solid gray; /* whichever color you prefer */
+}
