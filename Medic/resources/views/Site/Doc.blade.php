@@ -12,10 +12,96 @@
 
 @section('contenido')
 
-	@include('_part.about')
-
-	@include('_part.portfolio')
+	<h3 class="xtitle">Documentos</h3>
 	
+	<div class="row">
+
+	  <div class="col-xs-12">
+			<br>
+			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <span class="fa fa-medkit fa-5x" aria-hidden="true"></span>
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading">Pablo Arias</h4>
+			    <p>
+			    	<strong>Observaciones: </strong> El paciente es de prueba para la muestra de funcionamiento
+			    </p>
+			    	<a href="#" class="btn btn-default" role="button">Signos vitales</a>
+			    	<a href="#" class="btn btn-default" role="button">Video de consulta</a>
+			    	<a href="#" class="btn btn-default" role="button">Imagenes de consulta</a>
+			  </div>
+			</div>
+	    
+	  </div>
+
+	  <div class="col-xs-12">
+			<br>
+			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <span class="fa fa-medkit fa-5x" aria-hidden="true"></span>
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading">Pablo Arias</h4>
+			    <p>
+			    	<strong>Observaciones: </strong> El paciente es de prueba para la muestra de funcionamiento
+			    </p>
+			    	<a href="#" class="btn btn-default" role="button">Signos vitales</a>
+			    	<a href="#" class="btn btn-default" role="button">Video de consulta</a>
+			    	<a href="#" class="btn btn-default" role="button">Imagenes de consulta</a>
+			  </div>
+			</div>
+	    
+	  </div>
+
+	  <div class="col-xs-12">
+			<br>
+			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <span class="fa fa-medkit fa-5x" aria-hidden="true"></span>
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading">Pablo Arias</h4>
+			    <p>
+			    	<strong>Observaciones: </strong> El paciente es de prueba para la muestra de funcionamiento
+			    </p>
+			    	<a href="#" class="btn btn-default" role="button">Signos vitales</a>
+			    	<a href="#" class="btn btn-default" role="button">Video de consulta</a>
+			    	<a href="#" class="btn btn-default" role="button">Imagenes de consulta</a>
+			  </div>
+			</div>
+	    
+	  </div>
+
+	  <div class="col-xs-12">
+			<br>
+			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <span class="fa fa-medkit fa-5x" aria-hidden="true"></span>
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading">Pablo Arias</h4>
+			    <p>
+			    	<strong>Observaciones: </strong> El paciente es de prueba para la muestra de funcionamiento
+			    </p>
+			    	<a href="#" class="btn btn-default" role="button">Signos vitales</a>
+			    	<a href="#" class="btn btn-default" role="button">Video de consulta</a>
+			    	<a href="#" class="btn btn-default" role="button">Imagenes de consulta</a>
+			  </div>
+			</div>
+	    
+	  </div>
+	</div>
+
+	<br>
 @endsection
 
 @section('script')

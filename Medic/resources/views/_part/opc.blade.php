@@ -1,5 +1,5 @@
 <ul class="list-group">
-  <a href="{{ route('site.sv') }}" class="list-group-item">
+  <a href="{{ url('prueba') }}" class="list-group-item">
 	<span class="fa fa-tachometer" aria-hidden="true"></span>
 	Signo vital
   </a>
