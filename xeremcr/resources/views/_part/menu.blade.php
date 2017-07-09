@@ -13,7 +13,7 @@
   <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
     <ul class="nav navbar-nav">
       <li>
-      <a href="{{ route('noticias.index') }}" >Home</a>
+      <a href="" >Home</a>
       </li>
       <li>
       <a href="portfolio-item.html">Proyectos</a>
