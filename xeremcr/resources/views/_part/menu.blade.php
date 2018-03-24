@@ -13,10 +13,10 @@
   <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
     <ul class="nav navbar-nav">
       <li>
-      <a href="" >Home</a>
+      <a href="{{ route('noticias.index') }}" >Home</a>
       </li>
       <li>
-      <a href="portfolio-item.html">Proyectos</a>
+      <a href="#" ng-click="Show()">Proyectos</a>
       </li>
       <li>
       <a href="page-sample.html">Nosotros</a>

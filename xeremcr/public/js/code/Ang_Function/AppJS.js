@@ -1,0 +1,1 @@
+﻿var XeremCrApp = angular.module('XeremCrApp', []);
