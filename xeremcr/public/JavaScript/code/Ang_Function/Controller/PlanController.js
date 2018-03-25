@@ -2,12 +2,10 @@
 
         //$scope.planData = {};
 
-        var Controlador = "noticias";
+		var Controlador = "noticias";
         
         $scope.planData = function(){
-        	$(#tbldata).hide();
         	var das = XeremService.Mostrar(Controlador);
-        	$(#tbldata).show();
         	return das;
         };
         
@@ -56,13 +54,11 @@
 	    $scope.Save = function () {
 	        try {
 	            //incluir los datos para guardar
-	            var _plan = new Object();
-	            _plan.Aseguradora = $scope.Add_Aseguradora;
-	            _plan.Nombre = $scope.Add_Nombre;
-	            _plan.Descripcion = $scope.Add_Descripcion;
-	            _plan.Cobertura = $scope.Add_Cobertura;
+	            var _articulo = new Object();
+	            _articulo.Titulo = $scope.Add_Titulo;
+	            _articulo.Contenido = $scope.Add_Contenido;
 
-	            XeremService.Guardar(Controlador, _plan).then(function (data) {
+	            XeremService.Guardar(Controlador, _articulo).then(function (data) {
 	                // if successful, we'll need to refresh the comment list
 	                XeremService.Mostrar(Controlador).then(function (getData) {
 	                    $scope.comments = getData;

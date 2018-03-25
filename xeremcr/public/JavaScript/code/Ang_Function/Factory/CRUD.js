@@ -6,7 +6,7 @@
         var result = null;
         $.ajax({
             type: "GET",
-            url: Url //'../public/noticias/index'
+            url: Url,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             async: false,
@@ -53,13 +53,35 @@
         });
     }
 
-    factory.save = function (Url, data) {
-        return $http({
+    factory.save = function (Url, Datos) {
+
+        var result = null;
+        var obj = JSON.stringify(Datos);
+
+         $.ajax({
+                    type: "POST",
+                    url: Url,
+                    data: obj,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    success: function (data, status) {
+                        result = data;
+                    },
+                    error: function (e) {
+                        result = e;
+                    }
+               });
+
+        return result;
+
+        /*return $http({
             method: 'POST',
             url: Url,
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            async:false,
             data: $.param(data)
-        });
+        });*/
     }
 
     factory.destroy = function (Url, id) {

@@ -38,7 +38,10 @@ class ArticuloController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $Articulo = new articulo;
+        $Articulo->Titulo = $request->Titulo;
+        $Articulo->Contenido = $request->Contenido;
+        $Articulo->save();
     }
 
     /**
@@ -51,6 +54,20 @@ class ArticuloController extends Controller
     {
         //
         
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showAll()
+    {
+        $Articulo = new articulo;
+        $Articulo = articulo::all();
+
+        return response($Articulo);
     }
 
     /**

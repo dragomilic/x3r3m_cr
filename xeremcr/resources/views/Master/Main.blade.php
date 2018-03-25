@@ -8,19 +8,18 @@
 	<meta name="author" content="">
 	<title>@yield('title','Default')</title>
 	<link rel="shortcut icon" href="{{asset('favicon.ico')}}">
-	<!--  Style -->
-	<link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}" />
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<!--  Style -->
+	<link rel="stylesheet" href="{{asset('Library/Bootstrap/css/bootstrap.min.css')}}" />
 	<!--Propio-->
-	<link rel="stylesheet" href="{{asset('css/theme.css')}}" />
-	<link rel="stylesheet" href="{{asset('css/code/custom.css')}}" />
+	<link rel="stylesheet" href="{{asset('CSS/theme.css')}}" />
+	<link rel="stylesheet" href="{{asset('CSS/code/custom.css')}}" />
 	
 	@yield('CSS')
-	<!--  ng-app="XeremCrApp" ng-controller="planController" -->
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -78,22 +77,16 @@
 	</div>
 	
 	<!--  JavaScript -->
-	<script src="{{asset('AngularJS/angular.min.js')}}"></script>
-	<script src="{{asset('js/jquery.min.js')}}"></script>
-    <script src="{{asset('Bootstrap/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('Library/AngularJS/angular.min.js')}}"></script>
+	<script src="{{asset('JavaScript/jquery.min.js')}}"></script>
+  <script src="{{asset('Library/Bootstrap/js/bootstrap.min.js')}}"></script>
 	<!--Propio-->
-	<script src="{{asset('js/theme.js')}}"></script>
-	<script src="{{asset('js/code/jq/jq_card.js')}}"></script>
-	<!--  
-	<script src="{{asset('js/code/ang/routing/parametro.js')}}"></script>
-	<script src="{{asset('js/code/ang/routing/ang_articulos.js')}}"></script>
-	<script src="{{asset('js/code/ang/routing/ang_factory.js')}}"></script>
-	<script src="{{asset('js/code/ang/routing/ang_app.js')}}"></script>
-	-->
-	<script src="{{asset('js/code/Ang_Function/AppJS.js')}}"></script>
-	<script src="{{asset('js/code/Ang_Function/Factory/CRUD.js')}}"></script>
-	<script src="{{asset('js/code/Ang_Function/Service/Service.js')}}"></script>
-	<script src="{{asset('js/code/Ang_Function/Controller/PlanController.js')}}"></script>
+	<script src="{{asset('JavaScript/theme.js')}}"></script>
+	<script src="{{asset('JavaScript/code/jq/jq_card.js')}}"></script>
+	<script src="{{asset('JavaScript/code/Ang_Function/AppJS.js')}}"></script>
+	<script src="{{asset('JavaScript/code/Ang_Function/Factory/CRUD.js')}}"></script>
+	<script src="{{asset('JavaScript/code/Ang_Function/Service/Service.js')}}"></script>
+	<script src="{{asset('JavaScript/code/Ang_Function/Controller/PlanController.js')}}"></script>
 	@yield('script')
 	<!--  -->
 

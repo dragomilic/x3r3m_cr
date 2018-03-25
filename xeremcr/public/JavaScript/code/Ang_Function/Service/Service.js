@@ -1,9 +1,9 @@
 ﻿XeremCrApp.service('XeremService', function ($http, XeremFactory) {
 
-    var UrlConstant = "../public";
+    var UrlConstant = "../public/";
 
     this.Mostrar = function (crt) {
-        var Accion = UrlConstant + crt + "/Show";
+        var Accion = UrlConstant + crt + "/show";
         return XeremFactory.get(Accion);
     }
     this.Buscar = function (crt, id) {
@@ -16,7 +16,7 @@
         return XeremFactory.edit(Accion, id, data);
     }
     this.Guardar = function (crt, data) {
-        var Accion = UrlConstant + crt + "/Create";
+        var Accion = UrlConstant + crt + "/store";
         return XeremFactory.save(Accion, data);
     }
     this.Eliminar = function (crt, id) {
