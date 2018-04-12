@@ -24,11 +24,13 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-	
+
 	@include('_part.menu')
 
 	@include('_part.header')
 	
+			
+</div>
 	<section>
 		<div  class="row">
 		
@@ -57,7 +59,7 @@
 		@include('_part.footer') 
 	</footer>
 
-	<!-- Modal -->
+	 <!--Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">

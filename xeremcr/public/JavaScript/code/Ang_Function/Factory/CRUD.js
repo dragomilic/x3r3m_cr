@@ -56,14 +56,26 @@
     factory.save = function (Url, Datos) {
 
         var result = null;
-        var obj = JSON.stringify(Datos);
-
+/*
+        var inf = $http({
+            method: 'POST',
+            url: Url,
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            data: $.param(Datos)
+        });
+        
+        $http.post(Url, Datos)
+        .then(function success(e) {
+            result = e;
+ 
+        }, function error(error) {
+            result = error;
+        });
+*/
          $.ajax({
                     type: "POST",
                     url: Url,
-                    data: obj,
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
+                    data: $.param(Datos),
                     async: false,
                     success: function (data, status) {
                         result = data;
@@ -73,15 +85,7 @@
                     }
                });
 
-        return result;
-
-        /*return $http({
-            method: 'POST',
-            url: Url,
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            async:false,
-            data: $.param(data)
-        });*/
+        return result.message;
     }
 
     factory.destroy = function (Url, id) {

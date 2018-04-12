@@ -38,10 +38,19 @@ class ArticuloController extends Controller
      */
     public function store(Request $request)
     {
+        
+        
         $Articulo = new articulo;
         $Articulo->Titulo = $request->Titulo;
         $Articulo->Contenido = $request->Contenido;
         $Articulo->save();
+        
+        
+        /*return Response::json(array('success' => true));*/
+        return response()->json([
+            'task'    => $Articulo,
+            'message' => 'Success'
+        ], 200);
     }
 
     /**

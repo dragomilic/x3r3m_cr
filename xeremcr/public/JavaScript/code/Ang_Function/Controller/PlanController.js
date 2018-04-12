@@ -1,13 +1,15 @@
-﻿XeremCrApp.controller('planController', function ($scope, $http, XeremService) {
-
-        //$scope.planData = {};
+﻿XeremCrApp.controller('PlanController', function ($scope, $http, XeremService) {
 
 		var Controlador = "noticias";
-        
-        $scope.planData = function(){
+		
+		$scope.init = function () {
+			$scope.planData = XeremService.Mostrar(Controlador);
+		 };
+
+        /*$scope.planData = function(){
         	var das = XeremService.Mostrar(Controlador);
         	return das;
-        };
+        };*/
         
         $scope.Open = function (IdModal) {
             $(IdModal).modal('show')
@@ -53,19 +55,18 @@
 
 	    $scope.Save = function () {
 	        try {
+				var token = $('meta[name="csrf-token"]').attr('content');
 	            //incluir los datos para guardar
 	            var _articulo = new Object();
 	            _articulo.Titulo = $scope.Add_Titulo;
-	            _articulo.Contenido = $scope.Add_Contenido;
+				_articulo.Contenido = $scope.Add_Contenido;
+				_articulo._token = token;
 
-	            XeremService.Guardar(Controlador, _articulo).then(function (data) {
-	                // if successful, we'll need to refresh the comment list
-	                XeremService.Mostrar(Controlador).then(function (getData) {
-	                    $scope.comments = getData;
-	                }, function (error) {
-	                    console.log(error.data);
-	                });
-	            });
+				$scope.Add_Titulo = "";
+				$scope.Add_Contenido = "";
+				XeremService.Guardar(Controlador, _articulo);
+				$scope.planData = XeremService.Mostrar(Controlador);
+
 	        } catch (err) {
 	            console.log(err.data);
 	        }

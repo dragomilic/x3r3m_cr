@@ -16,7 +16,7 @@
         return XeremFactory.edit(Accion, id, data);
     }
     this.Guardar = function (crt, data) {
-        var Accion = UrlConstant + crt + "/store";
+        var Accion = UrlConstant + crt + "/save";
         return XeremFactory.save(Accion, data);
     }
     this.Eliminar = function (crt, id) {
